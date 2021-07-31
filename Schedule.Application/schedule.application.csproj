@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+	<ItemGroup>
+	  <PackageReference Include="microsoft.IdentityModel.Tokens" Version="6.12.0" />
+	  <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.12.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\Schedule.Domain\Schedule.domain.csproj" />
+	</ItemGroup>
+</Project>
