@@ -1,5 +1,5 @@
 # Schedule
-Backend: Schedule CRUD with ASP.Net Core 3.1/EF and DDD.
+Backend: CRUD with ASP.Net Core 3.1/EF and DDD.
 
 Frontend: Angular 9/HTML/CSS.
  
