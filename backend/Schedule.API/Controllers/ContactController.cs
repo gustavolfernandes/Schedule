@@ -21,8 +21,7 @@ namespace Schedule.Controllers
         {
             try
             {
-                var contacts = await repository.GetById(id);
-                return Ok(contacts);
+                return Ok(await repository.GetById(id));
             }
             catch
             {
@@ -47,19 +46,18 @@ namespace Schedule.Controllers
             [FromServices] IContactRepository repository)
         {
             if (!ModelState.IsValid)
-               return BadRequest(new { message = "Model invalido" });
+               return BadRequest(new { message = "Usuário invalido." });
             try
             {
-                var result = await repository.Post(model);
-                return Ok(model);
+                return Ok(await repository.Post(model));
             }
             catch (DbUpdateConcurrencyException)
             {
-                return BadRequest(new { message = "Não foi possível criar o contato" });
+                return Conflict(new { message = "Contato em conflito durante alteração." });
             }
-            catch (Exception ex)
+            catch
             {
-                throw new Exception(ex.Message);
+                return BadRequest(new { message = "Não foi possível criar contato." });
             }
         }
         [HttpPut]
@@ -75,9 +73,7 @@ namespace Schedule.Controllers
 
             try
             {
-                var result = await repository.Put(id, model);
-                
-                return Ok(result);
+                return Ok(await repository.Put(id, model));
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -97,8 +93,7 @@ namespace Schedule.Controllers
             [FromServices] IContactRepository repository)       
             {
             try { 
-                var result = await repository.Delete(id);
-                return Ok(new { message = "Contato removido." });
+                return Ok(await repository.Delete(id));
             }
             catch
             {

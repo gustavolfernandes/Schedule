@@ -45,9 +45,17 @@ namespace Schedule.Data.Repositories
             try
             {
                 model.Password = PasswordHasher.GenerateHasher(model.Password);
-                context.Users.Add(model);
-                await context.SaveChangesAsync();
-                return model;
+                if (!context.Users.Any(u => u.Username == model.Username))
+                {
+                    context.Users.Add(model);
+                    await context.SaveChangesAsync();
+                    return model;
+                }
+                else
+                {
+                    return null;
+                }
+    
             }
             catch (Exception ex)
             {

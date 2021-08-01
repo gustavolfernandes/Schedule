@@ -23,8 +23,14 @@ namespace Schedule.Controllers
         //Lista de usuários
         public async Task<IActionResult>Get([FromServices] IUserRepository repository)
         {
+            try {
             var result = await repository.Get();
             return Ok(result);
+            }
+            catch
+            {
+                return BadRequest(new { message = "Não foi possivel encontrar usuários." });
+            }
         }
         //Procura user por Id
         [HttpGet]
@@ -33,8 +39,14 @@ namespace Schedule.Controllers
             int id,
             [FromServices] IUserRepository repository)
         {
-            var result = await repository.GetById(id);
-            return result;
+            try
+            {
+                return await repository.GetById(id);
+            }
+            catch
+            {
+                return BadRequest(new { message = "Não foi possível encontrar usuário." });
+            }         
         }
 
         //Registra user
@@ -51,11 +63,17 @@ namespace Schedule.Controllers
             try
             {
                 var result = await repository.Post(model);
-                return Ok(result);
+                if (!(result == null))
+                {
+                    return Ok(result);
+                }
+                else {
+                    return Conflict(new { message = "Usuário já existe." });
+                }
             }
             catch (Exception)
             {
-                return BadRequest(new { message = "Não foi possível criar usuário" });
+                return BadRequest(new { message = "Não foi possível criar usuário." });
             }
         }
         [HttpPost]
@@ -65,16 +83,14 @@ namespace Schedule.Controllers
                     [FromBody] User model)
         {
             if (model == null)
-                return NotFound(new { message = "Usuário ou senha inválidos" });
+                return NotFound(new { message = "Usuário ou senha inválidos." });
             try
             {
-
-                var result = await repository.Authenticate(model);
-                return Ok(result);
+                return Ok(await repository.Authenticate(model));
             }
             catch(Exception)
             {
-                    return BadRequest(new { message = "Não foi possível logar usuário" });               
+                    return BadRequest(new { message = "Usuário ou senha inválidos." });               
             }
         }
     }

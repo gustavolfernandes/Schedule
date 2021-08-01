@@ -62,11 +62,11 @@ export class AddEditComponent implements OnInit {
             .pipe(first())
             .subscribe(
                 data => {
-                    this.alertService.success('Contact added successfully', { keepAfterRouteChange: true });
+                    this.alertService.success('Contato criado com sucesso.', { keepAfterRouteChange: true });
                     this.router.navigate(['.', { relativeTo: this.route }]);
                 },
                 error => {
-                    this.alertService.error(error);
+                    this.alertService.error(JSON.stringify(error).replace(/['"]+/g, ''));
                     this.loading = false;
                 });
     }
@@ -76,13 +76,12 @@ export class AddEditComponent implements OnInit {
         this.contactService.Put(this.id, this.form.value)
             .subscribe(
                 data => {                 
-                    this.alertService.success('Update successful', { keepAfterRouteChange: true });
+                    this.alertService.success('Contato atualizado com sucesso.', { keepAfterRouteChange: true });
                     this.router.navigate(['..', { relativeTo: this.route }]);
                 },
                 error => {
-                    this.alertService.error(error);
+                    this.alertService.error(JSON.stringify(error).replace(/['"]+/g, ''));
                     this.loading = false;
-                    console.log(error);
                 });
     }
 }

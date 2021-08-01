@@ -3,6 +3,8 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
+import { AlertService } from '@app/_services';
+
 
 import { environment } from '@environments/environment';
 import { User } from '@app/_models';
@@ -12,6 +14,7 @@ export class AccountService {
     private userSubject: BehaviorSubject<User>;
     public user: Observable<User>;
     public userlogged;
+    private alertService: AlertService
 
     constructor(
         private router: Router,
@@ -29,7 +32,7 @@ export class AccountService {
             .pipe(map(user => {
                 // store user details and jwt token in local storage to keep user logged in between page refreshes
                 localStorage.setItem('user', JSON.stringify(user));
-                localStorage.setItem('userLogged', JSON.stringify(user.id))
+                localStorage.setItem('userLogged', JSON.stringify(user.id));
                 this.userSubject.next(user);
                 return user;
             }));
@@ -44,7 +47,8 @@ export class AccountService {
         this.router.navigate(['/account/login']);
     }
 
-    register(user: User) {
+    register(user: User)
+    {    
         return this.http.post(`${environment.apiUrl}/users/register`, user);
     }
 

@@ -25,7 +25,7 @@ export class RegisterComponent implements OnInit {
             username: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(3)]]
         });
-    }
+      }
 
     // convenience getter for easy access to form fields
     get f() { return this.form.controls; }
@@ -46,13 +46,12 @@ export class RegisterComponent implements OnInit {
             .pipe(first())
             .subscribe(
                 data => {
-                    this.alertService.success('Registration successful', { keepAfterRouteChange: true });
+                    this.alertService.success('Usuário criado com sucesso.', { keepAfterRouteChange: true });
                     this.router.navigate(['../login'], { relativeTo: this.route });
-                    console.log(this.form.value);
                 },
                 error => {
-                    //this.alertService.error(error);
-                    this.loading = false;
+                    this.alertService.error(JSON.stringify(error).replace(/['"]+/g, ''));
+                    this.loading = false;  
                 });
     }
 }
