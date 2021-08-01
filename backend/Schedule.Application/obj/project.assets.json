@@ -313,11 +313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj",
+      "projectUniqueName": "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj",
       "projectName": "schedule.application",
-      "projectPath": "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj",
+      "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj",
       "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-      "outputPath": "C:\\project\\Schedule\\Schedule.Application\\obj\\",
+      "outputPath": "C:\\project\\Schedule\\backend\\Schedule.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -334,8 +334,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj": {
-              "projectPath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj"
+            "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj": {
+              "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj"
             }
           }
         }

@@ -39,7 +39,7 @@ namespace Schedule.Data.Repositories
         public async Task<List<Contact>> GetByUserId(int id)
         {
             var contacts = await context.Contacts.Include(x => x.User).AsNoTracking().Where(x => x.UserId == id).ToListAsync();
-            return contacts;
+            return contacts.OrderBy(x =>x.Name).ToList();
         }
 
         public async Task<Contact> Post(Contact model)

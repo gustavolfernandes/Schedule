@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SatFFXTO26XhSYGYflZwtobeXDLhSfCXLL1ExykkBdBYUqG+glssCsgY0rINKS2GMg4pYQG1qwuPojv6272BAA==",
+  "dgSpecHash": "bONUsHnqvU4y/jyFojf4uds2XuqFY8xGgbOk0SzW9HYmnw11XMsI41iD0qu3lVln3j5GgHwHJ/Q+NG1SHgbKkQ==",
   "success": true,
-  "projectFilePath": "C:\\project\\Schedule\\schedule.api\\Schedule.API.csproj",
+  "projectFilePath": "C:\\project\\Schedule\\backend\\schedule.api\\Schedule.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

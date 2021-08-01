@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ihx1mfkfINr+54Xu5hbhZo/agDk8NYe6xVpwROleGV775Q7fdYWKQleHGXFa6sww7bRVyI7VHHQ0bCWkZ3pKCQ==",
+  "dgSpecHash": "yeSs93yaQ6W6VqPryxOz0HQYz9FSvbcm/1DHuce+SJDx0rcjKrSMNTWgMfr+fgPiMZBfkE2vUVNoS+El+e6ZlA==",
   "success": true,
-  "projectFilePath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj",
+  "projectFilePath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

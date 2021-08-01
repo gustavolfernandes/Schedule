@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\project\\Schedule\\schedule.api\\Schedule.API.csproj": {}
+    "C:\\project\\Schedule\\backend\\schedule.api\\Schedule.API.csproj": {}
   },
   "projects": {
-    "C:\\project\\Schedule\\schedule.api\\Schedule.API.csproj": {
+    "C:\\project\\Schedule\\backend\\schedule.api\\Schedule.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\Schedule\\schedule.api\\Schedule.API.csproj",
+        "projectUniqueName": "C:\\project\\Schedule\\backend\\schedule.api\\Schedule.API.csproj",
         "projectName": "Schedule.API",
-        "projectPath": "C:\\project\\Schedule\\schedule.api\\Schedule.API.csproj",
+        "projectPath": "C:\\project\\Schedule\\backend\\schedule.api\\Schedule.API.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\Schedule\\schedule.api\\obj\\",
+        "outputPath": "C:\\project\\Schedule\\backend\\schedule.api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj": {
-                "projectPath": "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj"
+              "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj"
               },
-              "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj"
               },
-              "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj": {
+    "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj",
+        "projectUniqueName": "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj",
         "projectName": "schedule.application",
-        "projectPath": "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj",
+        "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\Schedule\\Schedule.Application\\obj\\",
+        "outputPath": "C:\\project\\Schedule\\backend\\Schedule.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -117,8 +117,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj"
               }
             }
           }
@@ -161,14 +161,14 @@
         }
       }
     },
-    "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj": {
+    "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj",
+        "projectUniqueName": "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj",
         "projectName": "schedule.crossCutting",
-        "projectPath": "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj",
+        "projectPath": "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\Schedule\\schedule.crossCutting\\obj\\",
+        "outputPath": "C:\\project\\Schedule\\backend\\schedule.crossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -185,11 +185,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj"
               },
-              "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj"
               }
             }
           }
@@ -228,14 +228,14 @@
         }
       }
     },
-    "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj": {
+    "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj",
+        "projectUniqueName": "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj",
         "projectName": "schedule.data",
-        "projectPath": "C:\\project\\Schedule\\Schedule.Data\\schedule.data.csproj",
+        "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Data\\schedule.data.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\Schedule\\Schedule.Data\\obj\\",
+        "outputPath": "C:\\project\\Schedule\\backend\\Schedule.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -252,8 +252,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj": {
-                "projectPath": "C:\\project\\Schedule\\Schedule.Application\\schedule.application.csproj"
+              "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj": {
+                "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Application\\schedule.application.csproj"
               }
             }
           }
@@ -292,14 +292,14 @@
         }
       }
     },
-    "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj": {
+    "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj",
+        "projectUniqueName": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj",
         "projectName": "Schedule.domain",
-        "projectPath": "C:\\project\\Schedule\\Schedule.Domain\\Schedule.domain.csproj",
+        "projectPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\Schedule.domain.csproj",
         "packagesPath": "C:\\Users\\Gustavo\\.nuget\\packages\\",
-        "outputPath": "C:\\project\\Schedule\\Schedule.Domain\\obj\\",
+        "outputPath": "C:\\project\\Schedule\\backend\\Schedule.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Gustavo\\AppData\\Roaming\\NuGet\\NuGet.Config",

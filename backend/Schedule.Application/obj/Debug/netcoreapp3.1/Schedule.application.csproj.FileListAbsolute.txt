@@ -22,3 +22,15 @@ C:\project\Schedule.new\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.ap
 C:\project\Schedule.new\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.csproj.CopyComplete
 C:\project\Schedule.new\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.dll
 C:\project\Schedule.new\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.pdb
+C:\project\Schedule\backend\Schedule.Application\bin\Debug\netcoreapp3.1\schedule.application.deps.json
+C:\project\Schedule\backend\Schedule.Application\bin\Debug\netcoreapp3.1\schedule.application.dll
+C:\project\Schedule\backend\Schedule.Application\bin\Debug\netcoreapp3.1\schedule.application.pdb
+C:\project\Schedule\backend\Schedule.Application\bin\Debug\netcoreapp3.1\Schedule.domain.dll
+C:\project\Schedule\backend\Schedule.Application\bin\Debug\netcoreapp3.1\Schedule.domain.pdb
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.csproj.AssemblyReference.cache
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.AssemblyInfoInputs.cache
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.AssemblyInfo.cs
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.csproj.CoreCompileInputs.cache
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.csproj.CopyComplete
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.dll
+C:\project\Schedule\backend\Schedule.Application\obj\Debug\netcoreapp3.1\schedule.application.pdb

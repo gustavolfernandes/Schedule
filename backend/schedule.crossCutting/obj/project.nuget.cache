@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pe5lA1kb7qaPcyp7dWSM746dMB0vWqkpUjVPrFWxwfnuWurWDt2XSk7R4SmoDqjlP24DtV5X/WKJlNzEDkopYw==",
+  "dgSpecHash": "v8/zJBYZ33qIqVR6ZdypZTO3n7TJ6pMnurBXmXjA33Pr2szAexfQL2iz+IhoiHpbLR5X9OOQmqC6mIXg8FPCMA==",
   "success": true,
-  "projectFilePath": "C:\\project\\Schedule\\schedule.crossCutting\\schedule.crossCutting.csproj",
+  "projectFilePath": "C:\\project\\Schedule\\backend\\schedule.crossCutting\\schedule.crossCutting.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Gustavo\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.8\\microsoft.entityframeworkcore.5.0.8.nupkg.sha512",
