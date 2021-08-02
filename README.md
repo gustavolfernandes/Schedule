@@ -21,11 +21,11 @@ Rodar apenas o projeto Schedule.API e entrar na pasta do frontend e executar no 
 
 - Exibir campos: nome, telefone e e-mail
 
-#### Cadastrar contatos
+### Cadastrar contatos
 
 - Formulário com campos de nome, telefone e e-mail
 - Não é necessário conectividade com banco de dados. Os contatos deverão ser salvos em IndexedDB
-- 
+ 
 ### Editar contatos
 
 - Deve ser possível editar qualquer um dos campos existentes no cadastro de contatos
