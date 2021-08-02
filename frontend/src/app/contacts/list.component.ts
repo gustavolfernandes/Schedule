@@ -18,7 +18,7 @@ export class ListComponent implements OnInit {
     }
 
     
-    deleteContact(id: string) {
+    deleteContact(id: number) {
         const deleted = this.contacts.find(x => x.id === id);
         deleted.isDeleting = true;
         this.contactService.Delete(id)

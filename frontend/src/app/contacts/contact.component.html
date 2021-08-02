@@ -1,0 +1,29 @@
+﻿<h1>Contato</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th style="width: 30%">Nome</th>
+            <th style="width: 30%">Telefone</th>
+            <th style="width: 40%">Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{contact.name}}</td>
+            <td>{{contact.phoneNumber}}</td> 
+            <td>{{contact.eMail}}</td>        
+        </tr>        
+        <tr>
+            <td colspan="3" class="text-center">
+            </td>
+        </tr>
+            <button routerLink="../edit/{{contact.id}}" class="btn btn-primary">Editar</button>
+        &nbsp;
+            <button (click)="deleteContact(contact.id)" class="btn btn-primary btn-danger">
+                Deletar
+            </button>
+            &nbsp;
+            <a routerLink="/contacts" class="btn btn-link">Voltar</a>     
+    </tbody>
+</table>
+

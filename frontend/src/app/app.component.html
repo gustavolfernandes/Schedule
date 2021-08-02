@@ -1,8 +1,8 @@
 ﻿<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
     <div class="navbar-nav">
         <a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a class="nav-item nav-link" routerLink="/contacts" routerLinkActive="active">Contacts</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+        <a class="nav-item nav-link" routerLink="/contacts" routerLinkActive="active">Contatos</a>
+        <a class="nav-item nav-link" (click)="logout()">Deslogar</a>
     </div>
 </nav>
 <div class="app-container" [ngClass]="{ 'bg-light': user }">

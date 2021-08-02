@@ -29,7 +29,7 @@ export class ContactService {
         return this.http.get<Contact[]>(`${environment.apiUrl}/contacts/users/${id}`);
     }
 
-    getById(id: string) {
+    getById(id: number) {
         return this.http.get<Contact>(`${environment.apiUrl}/contacts/${id}`);
     }
     register(contact: Contact) {
@@ -39,7 +39,7 @@ export class ContactService {
         return this.http.put(`${environment.apiUrl}/contacts/update/${id}`, params)
     }
 
-    Delete(id: string) {
+    Delete(id: number) {
         return this.http.delete(`${environment.apiUrl}/contacts/${id}`)
             .pipe(map(x => {
                 return x;

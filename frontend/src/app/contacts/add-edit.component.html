@@ -1,15 +1,15 @@
-﻿<h1 *ngIf="isAddMode">Add Contact</h1>
-<h1 *ngIf="!isAddMode">Edit Contact</h1>
+﻿<h1 *ngIf="isAddMode">Adicionar Contato</h1>
+<h1 *ngIf="!isAddMode">Editar Contato</h1>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
     <div class="form-row">
         <div class="form-group col">
-            <label for="Name">Name</label>
+            <label for="Name">Nome</label>
             <input type="text" formControlName="Name" class="form-control" [ngClass]="{ 'is-invalid': submitted}" />
         </div>     
     </div>
     <div class="form-row">
         <div class="form-group col">
-            <label for="PhoneNumber">Phone Number</label>
+            <label for="PhoneNumber">Telefone</label>
             <input type="text" formControlName="PhoneNumber" class="form-control" [ngClass]="{ 'is-invalid': submitted}" />        
         </div>
     </div>    
@@ -24,8 +24,8 @@
     <div class="form-group">
         <button [disabled]="loading" class="btn btn-primary">
             <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
-            Save
+            Salvar
         </button>
-        <a routerLink="/users" class="btn btn-link">Cancel</a>
+        <a routerLink="/contacts" class="btn btn-link">Cancelar</a>
     </div>
 </form>

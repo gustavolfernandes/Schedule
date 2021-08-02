@@ -19,9 +19,11 @@ namespace Schedule.Controllers
             int id,
             [FromServices] IContactRepository repository)
         {
-            try
-            {
-                return Ok(await repository.GetById(id));
+            try { 
+
+                var result = await repository.GetById(id);
+                result.User = null;
+                return Ok(result);
             }
             catch
             {
